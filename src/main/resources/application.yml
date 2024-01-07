@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: Micronaut Hotwired Turbo
+
+  security:
+    enabled: false
+
+  views:
+    velocity:
+      enabled: false
+    pebble:
+      default-extension: peb
+      enabled: true
+

@@ -1,0 +1,15 @@
+{# @pebvariable name="episode" type="io.micronaut.turbo.Episode" #}
+<table>
+    <tr>
+        <th>title</th>
+        <td>{{ episode.title }}</td>
+    </tr>
+    <tr>
+        <th>body</th>
+        <td>{{ episode.body }}</td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><a href="/edit/{{ episode.id }}">edit</a></td>
+    </tr>
+</table>

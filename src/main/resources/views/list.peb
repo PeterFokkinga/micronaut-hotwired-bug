@@ -1,0 +1,6 @@
+{# @pebvariable name="episodes" type="java.util.List<io.micronaut.turbo.Episode>" #}
+<ul>
+        {% for ep in episodes %}
+        <li><a href="/view/{{ ep.id }}">{{ ep.title }}</a></li>
+        {% endfor %}
+</ul>

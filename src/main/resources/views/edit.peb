@@ -1,0 +1,21 @@
+{# @pebvariable name="episode" type="io.micronaut.turbo.Episode" #}
+<form action="/edit" method="post" enctype="multipart/form-data">
+    <input name="id" type="hidden" value="{{ episode.id }}">
+    <table>
+        <tr>
+            <th>title</th>
+            <td><input name="title" value="{{ episode.title }}" size="80"></td>
+        </tr>
+        <tr>
+            <th>body</th>
+            <td><textarea name="body" cols="40" rows="5">{{ episode.body }}</textarea></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <input type="submit" value="save">
+                <a href="/view/{{ episode.id }}">cancel</a>
+            </td>
+        </tr>
+    </table>
+</form>

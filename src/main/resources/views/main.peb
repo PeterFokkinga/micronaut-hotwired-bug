@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 7.3.0 is the current stable release -->
+    <script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo@v7.3.0';
+    </script>
+    <style>
+        div {
+            margin: 2em;
+            border: darkgreen 2px;
+        }
+    </style>
+</head>
+<body>
+<h1>Bebop Turbo!</h1>
+<h2>Episodes</h2>
+<div>
+    <turbo-frame id="list" target="episode">
+        {% include "list" %}
+    </turbo-frame>
+</div>
+<h2>One Episode</h2>
+<div>
+    <turbo-frame id="episode">
+        {% include edit ? "edit": "view" %}
+    </turbo-frame>
+</div>
+</body>
+</html>
